@@ -85,9 +85,16 @@ function App() {
 
   return (
     <>
-        <Card name={data[0].name} img={data[0].img}/>
-        <Card/>
-        <Card/>
+        <Card name={data[0].name} img={data[0].img} type={data[0].type} gasolineLiter={data[0].gasolineLiter} people={data[0].people} 
+          kindOfTransition={data[0].kindOfTransition} pricePerDay={data[0].pricePerDay}
+        />
+        <Card name={data[1].name} img={data[1].img} type={data[1].type} gasolineLiter={data[1].gasolineLiter} people={data[1].people} 
+          kindOfTransition={data[1].kindOfTransition} pricePerDay={data[1].pricePerDay}
+        />
+        <Card name={data[2].name} img={data[2].img} type={data[2].type} gasolineLiter={data[2].gasolineLiter} people={data[2].people} 
+          kindOfTransition={data[2].kindOfTransition} pricePerDay={data[2].pricePerDay}
+        />
+
     </>
   )
 }
